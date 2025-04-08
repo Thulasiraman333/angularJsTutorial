@@ -5,9 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="/angular-1.8.2/angular.min.js"></script>
+  <script src="/two-way binding/script.js"></script>
 </head>
 
-<body>
+<body ng-app="myModule">
+  <div ng-controller="myController">
+    <table>
+      <tr>
+        <td>First Name</td>
+        <td>
+          <input type="text" ng-model="employee.firstName">
+        </td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>
+          <input type="text" ng-model="employee.lastName">
+        </td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="text" ng-model="employee.gender">
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+      <tr>
+        <td>First Name</td>
+        <td>
+          {{employee.firstName}}
+        </td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>
+          {{employee.lastName}}
+        </td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          {{employee.gender}}
+        </td>
+      </tr>
+    </table>
+  </div>
 
 </body>
 
