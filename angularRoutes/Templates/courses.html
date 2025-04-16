@@ -1,7 +1,9 @@
 <div>
   <h4>Courses We Offer</h4>
 
-  <ul ng-repeat="course in courses">
-    <li>{{course}}</li>
+  <ul>
+    <li ng-repeat="course in courseCtrl.courses">
+      <a href="#!/courses/#!{{course.courseId}}">{{course.courseName}}</a>
+    </li>
   </ul>
 </div>

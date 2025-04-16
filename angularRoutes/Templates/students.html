@@ -1,4 +1,5 @@
 <div>
   <h4>Student Detail</h4>
-  <p>{{students | json}}</p>
+  <p>{{studentCtrl.students | json}}</p>
 </div>
+<button ng-click="studentCtrl.reloadData()">Reload</button>
